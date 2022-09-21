@@ -1,0 +1,29 @@
+.Nav{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 2rem 0;
+
+}
+
+.Nav li{
+    width: 100%;
+    text-align: center;
+    background-color: royalblue;
+    color: white;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.Nav li.active{
+    background-color: rgb(233, 233, 233);
+    color: royalblue;
+}
+
+@media (max-width: 480px) {
+    .Nav li{
+        font-size: 1rem;
+    }
+}

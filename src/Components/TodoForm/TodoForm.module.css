@@ -1,0 +1,44 @@
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    font-size: 1.2rem;
+}
+
+.form input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 20rem;
+    font-size: inherit;
+}
+
+.form input:focus{
+    outline: none;
+    border-bottom: 2px solid royalblue;
+}
+
+
+.addButton{
+    background-color: royalblue;
+    color: white;
+    font-size: inherit;
+    border: none;
+    padding: 8px 2rem;
+    border-radius: 5px;
+}
+
+.addButton:disabled{
+    color: rgb(189, 188, 188);
+    background-color: rgb(230, 230, 230);
+}
+
+@media (max-width: 480px) {
+    .form{
+        flex-direction: column;
+    }
+    .form input{
+        width: 100%;
+    }
+}

@@ -1,0 +1,38 @@
+.taskList{
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    background-color: #E9E9E9;
+    align-items: center;
+    list-style: none;
+}
+
+.taskItem{
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskItem button{
+    background-color: rgb(212, 72, 72);
+    color: white;
+    border: none;
+    padding: 8px 3rem;
+}
+
+@media (max-width: 480px) {
+    .taskList{
+        width: 100%;
+    }
+    .taskItem{
+        font-size: 1.2rem;
+    }
+
+    .taskItem button{
+        padding: 8px 2rem;
+    }
+}
